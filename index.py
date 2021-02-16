@@ -1,10 +1,11 @@
 import pyautogui
 import time
 
-#time.sleep(5)
+time.sleep(5)
 print("iniciando votação")
 
 while True:
+    time.sleep(5)
     name_vote = pyautogui.locateOnScreen('nome.png')
     if name_vote:
         point=pyautogui.center(name_vote)
@@ -18,8 +19,8 @@ while True:
 
             if back:
                 backPoint=pyautogui.center(back)
-                print("Achei botao voltar")
                 pyautogui.click(backPoint)
-                print("cliquei")
             pass
+    
+    time.sleep(30)
     pass      
