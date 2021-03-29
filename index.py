@@ -1,5 +1,5 @@
 import pyautogui
-import time, keyboard
+import time
 
 time.sleep(5)
 print("iniciando votação")
@@ -26,4 +26,4 @@ while True:
         pyautogui.click(backPoint)
 
     pass      
-    time.sleep(20)
+    time.sleep(25)
